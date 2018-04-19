@@ -17,8 +17,11 @@ public class DriverFile {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest logger;
+
+        @Test
+	public void main()throws Exception{
 	
-	public static void main(String[] args) throws Exception {
+	//public static void main(String[] args) throws Exception {
 		
 		String cur_dir = System.getProperty("user.dir");
 		String suitePath = cur_dir + "/src/test/java/utility/TestSuite.xls";
